@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanvir Bank</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <p class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima.
-    </p>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
-</body>
+  <body>
+    <div class="container" id="login-area">
+      <div class="row">
+        <h1 class="text-center mt-md-5 pt-md-5">
+          Welcome to the Tanvir Online Bank
+        </h1>
+        <form action="#" class="shadow p-3 my-4" id="login">
+          <h3>Login</h3>
+          <input
+            type="email"
+            name=""
+            class="form-control my-3"
+            placeholder="email"
+          />
+          <input
+            type="password"
+            name=""
+            class="form-control"
+            placeholder="password"
+          />
+          <input
+            type="submit"
+            value="Enter"
+            class="btn btn-success my-3"
+            id="login-btn"
+          />
+        </form>
+      </div>
+    </div>
 
+    <div class="container mt-5" id="accounting-area">
+      <div class="row" id="cash">
+        <div class="col-md-4">
+          <div
+            class="deposit status d-flex flex-column justify-content-center align-items-center py-4"
+          >
+            <h2>DEPOSIT</h2>
+            <p>
+              <span>$</span>
+              <span id="deposit-value">0</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="withdraw status d-flex flex-column justify-content-center align-items-center py-4"
+          >
+            <h2>WITHDRAW</h2>
+            <p><span>$</span> <span id="withdraw-value">0</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="total status d-flex flex-column justify-content-center align-items-center py-4"
+          >
+            <h2>TOTAL</h2>
+            <p><span>$</span> <span id="total">0</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="user-input-area">
+        <div class="col-6">
+          <div class="p-4 shadow">
+            <h2>Deposit</h2>
+            <input
+              type="text"
+              id="deposit"
+              class="form-control my-3"
+              placeholder="$ enter the amount for deposit"
+            />
+            <button class="btn btn-success" id="deposit-btn">deposit</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-4 shadow">
+            <h2>Withdraw</h2>
+            <input
+              type="text"
+              id="withdraw"
+              class="form-control my-3"
+              placeholder="$ enter the amount for deposit"
+              required
+            />
+            <button class="btn btn-success" id="withdraw-btn">withdraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>

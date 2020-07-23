@@ -1,0 +1,22 @@
+#user-input-area {
+  margin: 40px 0;
+}
+#accounting-area {
+  display: none;
+}
+.status {
+  border-radius: 20px;
+  color: white;
+}
+.status span {
+  font-size: 2rem;
+}
+.deposit {
+  background-color: slateblue;
+}
+.withdraw {
+  background-color: lightsalmon;
+}
+.total {
+  background-color: orange;
+}
